@@ -15,7 +15,7 @@ ul, ol{
 #main{
     width: 100%;
     height: 1080px;
-    background-image: url(img/new_main.png);
+    background-image: url(../img/new_main.png);
     padding: 0;
 }
 #main h1{
