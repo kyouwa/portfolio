@@ -359,10 +359,19 @@ ul li a{
         height:2300px;
         background: #F9FAFB;
     }
+    #send_m h2{
+        color:#3182F6;
+        font-weight: bold;
+        font-size: 25px;
+    }
     #send_m span{
         color:#3182F6;
         font-weight: bold;
         font-size: 20px;
+    }
+    #send_m h3{
+        font-size: 25px !important;
+        font-weight: bold;
     }
     #send_m .txt1{
         font-size: 25px !important;
@@ -394,6 +403,14 @@ ul li a{
     }
     #business .col-sm-3 h3{
         height: 120px !important;
+    }
+    #bespoke_m h1{
+        font-size: 40px !important;
+        font-weight: bold;
+    }
+    #bespoke_m h2{
+        font-size: 25px !important;
+        font-weight: bold;
     }
     .pic01{
         width:57% !important;
