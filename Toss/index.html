@@ -13,7 +13,71 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>10){
+                    $(".navbar").css("border-bottom","1px solid #E5E7EA");
+                }else{
+                    $(".navbar").css("border-bottom","none");
+                }
+                // console.log($(window).scrollTop());
+
+                if($(window).scrollTop()>1100){
+                    
+                    $("#box1").addClass("animate__animated").addClass("animate__slideInUp");
+                }
+
+                if($(window).scrollTop()>1150){
+                    
+                    $("#box3").addClass("animate__animated").addClass("animate__slideInUp");
+                }
+
+                if($(window).scrollTop()>1180){
+                    
+                    $("#box2").addClass("animate__animated").addClass("animate__slideInUp");
+                }
+
+                if($(window).scrollTop()>1280){
+                    
+                    $("#box4").addClass("animate__animated").addClass("animate__slideInUp");
+                }
+
+                if($(window).scrollTop()>2450){
+                    
+                    $("#box6 #text01").addClass("animate__animated").addClass("animate__slideInLeft");
+                }
+
+                if($(window).scrollTop()>2450){
+                    
+                    $("#box6 #img01").addClass("animate__animated").addClass("animate__slideInRight");
+                }
+
+                if($(window).scrollTop()>2850){
+                    
+                    $("#box7 #img02").addClass("animate__animated").addClass("animate__slideInLeft");
+                }
+
+                if($(window).scrollTop()>2850){
+                    
+                    $("#box7 #text02").addClass("animate__animated").addClass("animate__slideInRight");
+                }
+
+                if($(window).scrollTop()>3200){
+                    
+                    $("#box8 #text03").addClass("animate__animated").addClass("animate__slideInLeft");
+                }
+
+                if($(window).scrollTop()>3200){
+                    
+                    $("#box8 #img03").addClass("animate__animated").addClass("animate__slideInRight");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -78,10 +142,10 @@
 
     <!-- 홈.소비 -->
     <div id="home" class="container">
-        <h2>홈·소비</h2>
         <div class="row">
             <div class="col-sm-6">
                 <div id="box1">
+                    <h2>홈·소비</h2>
                     <h3>
                         내 돈 관리,<br>
                         지출부터 일정까지<br>
@@ -128,7 +192,7 @@
         </div>
         <div id="box6" class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div id="text01" class="col-sm-6">
 
                     <span>평생 무료 송금</span>
                     <p class="text1">
@@ -140,17 +204,17 @@
                     이제 토스와 함께 수수료 걱정 없이 송금하세요.
                     </p>
                 </div>
-                <div class="col-sm-6">
+                <div id="img01" class="col-sm-6">
                     <img class="pic03" src="img/section1_2_01.png" alt="수수료 무료">
                 </div>
             </div>
         </div>
         <div id="box7" class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div id="img02" class="col-sm-6">
                     <img class="pic03" src="img/section1_2_02.png" alt="송금 전 주의">
                 </div>
-                <div class="col-sm-6 comment">
+                <div id="text02" class="col-sm-6 comment">
 
                     <span>사기계좌 조회</span>
                     <p class="text1">
@@ -167,7 +231,7 @@
         </div>
         <div id="box8" class="container">
             <div class="row">
-                <div class="col-sm-6 comment">
+                <div id="text03" class="col-sm-6 comment">
 
                     <span>자동이체 예약</span>
                     <p class="text1">
@@ -179,7 +243,7 @@
                     점검 시간이 끝나면 토스가 알아서 송금해드릴게요.
                     </p>
                 </div>
-                <div class="col-sm-6">
+                <div id="img03" class="col-sm-6">
                     <img class="pic03" src="img/section1_2_03.png" alt="은행 전검 예약">
                 </div>
             </div>
