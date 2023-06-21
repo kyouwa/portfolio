@@ -3,7 +3,7 @@ ul, ol{
 }
 .navbar{
     background-color: white;
-    border-bottom: none;
+    /*border-bottom: none;*/
 }
 .navbar a{
     color: #425968 !important;
